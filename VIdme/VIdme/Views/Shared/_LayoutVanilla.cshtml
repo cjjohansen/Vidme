@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="vidMeApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - VIdme</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="~/Scripts/App/app.js"></script>
+ 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+
+    @RenderSection("styles", required: false)
+
+
+    @RenderSection("headScripts", required: false)
+
+</head>
+<body>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="VIdme.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="VIdme">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="cjjohansen" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG9nCPT3PI2qSFmL3Ro4Qm8wDQYJKoZIhvcNAQEBBQAEggEAl8v9ID9ybVL0qTIORNz5CWXh976PRc25O+d6zqchPW6knlrj3D5YFnzQ0hX9tFr0SSzIunImAukmSl/D1GST+va55Aeq/e1oiwxPQna2dY0fBl3HfKQD4KBWol0indL0sMAwoYQCXyAmNFIMpB/o3lMI2G32JXumkSVmKpGNPBQ5vD+YaHf+5FatknhID8dK341KuhHKO2XpaR/ABfZd6l7/PD0006jbDIObfYLNLfx5zr+uaWHqWoQeGCiXT+maWStyDAACTxmHafJDyJHsWryHqybwB0MgKS3cC3jj0PElR6Cw1DLo0HXrDAtxae22nnx+PCvTT2Utpl9MsfQzpjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAu0isenMFSVgBDruOR2jSMr+bLJUPIP+gkC" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-01-21T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="5E623EFF914B9BA58025A560885B3F414FAD6494" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

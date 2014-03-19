@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="vidMeApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - VIdme</title>
+    
+
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/bundles/css")
+
+    @RenderSection("styles", required: false);
+    @RenderSection("headScripts", required: false);
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse  navbar-fixed-top ">
+        <div class="container">
+            <div class="row">
+                <div class="column col-lg-3  col-lg-offset-1">
+                    <div class="navbar-header">
+                       
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            @Html.ActionLink(" ", "Index", "Home", null, new
+                                               {
+                                                   style = "margin-left:0px; background: url('../../Content/images/VidmeLog_white.png') no-repeat center right;display:block; height:37px; width:177px;"
+                                               })
+                       
+                        
+                    </div>
+                    </div>
+                    <div class="column col-lg-4 col-lg-offset-1">
+                        <img src="../../Content/images/this_is_me_live.png" alt="this is me live" style="margin-top:1em;" />
+                    </div>
+                <div class="column col-lg-2">
+                 
+                    <div class="navbar-collapse collapse">
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+        </div>
+    </div>
+    <div id="main">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/angular-ui")*@
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="~/Scripts/App/app.js"></script>
+    @RenderSection("scripts", required: false);
+</body>
+</html>

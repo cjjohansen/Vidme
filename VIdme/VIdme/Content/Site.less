@@ -1,0 +1,210 @@
+﻿@import './bootstrap/bootstrap.less';
+@import './fontawesome/font-awesome.less';
+
+@import 'variables.less';
+@import 'mixins.less';
+@import 'magic-bootstrap.less';
+
+/*@import (less) "./VideoPlayer/video-default.css";*/
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+.form-control
+{
+    background-color: @gray-light;
+    .placeholder(#fff);
+
+}
+
+
+
+body
+{
+     margin: 0;
+     background-image: url(images/bg_layer.png);
+     background-repeat:repeat;
+     
+   
+
+}
+
+p{
+    font-size: 18px !important;
+}
+
+#main
+{
+    padding-top: 4em;
+}
+
+h2
+{
+    color : @brand-primary;
+}
+
+a{
+     color:@gray;
+}
+
+a:hover, a:focus 
+{
+    color:@gray;
+}
+
+
+.navbar {
+    min-height:67px; 
+} 
+
+.navbar-header
+{
+    margin-top:1em;
+}
+/*.navbar-brand,
+.navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+}*/
+
+
+.nav-tabs {
+border-bottom: 1px solid @tab-border;
+}
+
+.nav-tabs > li > a {
+
+background-color:@tab-background;
+border-color: @tab-border ;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: @tab-border ;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border-color: @tab-border @tab-border white @tab-border ;
+}
+.nav > li > a {
+    padding: 5px 30px;
+    font-size: @font-size-large;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+
+#my-tab-content {
+    background-color: white;
+}
+
+
+.camera_tag .cameratag_screen.cameratag_start
+{
+    background-color : @brand-info;
+}
+
+@vidmebar-height: 3em;
+
+.vidme-bar
+{
+    //position:relative;/*in order to position children*/
+    background-color: @gray-lighter;
+    /*height: @vidmebar-height;*/
+    border-radius: 6px;
+    border:1px solid @gray-light;
+    width: auto;
+    overflow:hidden;
+    /*padding-left: 80px; 
+    padding-right: 150px; */
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: @vidmebar-height;*/   
+    /*padding-left: 2em;*/
+    /*font-size:x-large;*/
+}
+
+
+div.inline, button.inline
+{
+    float:left;
+    /*display:inline;*/
+}
+
+.vidme-bar-left
+{
+   width: 70px;          /* LC width */
+ height: 70px;          /* LC width */
+  float: left;
+}
+
+.vidme-bar-center
+{
+    text-align: center;
+    vertical-align: middle;
+    margin:  0px 150px 0px 80px;
+}
+
+.vidme-bar-right
+{
+    text-align: center;
+    vertical-align: middle;
+    float:right;
+}
+
+
+
+
+.clearBoth { clear:both; }
+
+.float-right{ float:right;}
+
+
+
+ul.vidme-list
+{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+ul.vidme-list > li
+{
+    margin-top : 0.4em;
+}
+
+.green-button
+{
+    /*display:inline;*/
+    background-image: url(images/green-button.png)  ;
+    background-position:center;
+    -moz-background-size:auto;
+    -o-background-size:auto;
+    -webkit-background-size:auto;
+    background-size:auto;
+    height:70px;
+    width:70px;
+    margin-right:0.2em;
+}
+
+.blue-button
+{
+    border:none;
+    background-color:@brand-primary;
+    color: white;
+    height:70px;
+    width:70px;
+    font-size: x-large;
+    text-align: center;
+    vertical-align: middle;
+}
